@@ -1,0 +1,584 @@
+
+/* Navbar Css */
+
+nav,
+.navbar-menu {
+  display: flex;
+}
+
+nav {
+  position: fixed;
+  justify-content: space-around;
+  align-items: center;
+  height: 17vh;
+  z-index: 1000;
+  background-color: #000;
+  width: 100%;
+}
+
+.logo{
+  height: 80px;
+}
+
+h3{
+  color: #fff;
+  text-align: center;
+}
+
+section{
+  padding-top: 5vh;
+  box-sizing: border-box;
+  margin: 0 10rem;
+  min-height: fit-content;
+}
+
+button{
+  font-weight: 700;
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  z-index: 1; /* protect conflicting hover effects */
+}
+
+.navbar-menu{
+  list-style: none;
+  gap: 2rem;
+  font-size: 1.5rem;
+}
+
+.navbar-menu a{
+  color: #F0F3FF;
+  text-decoration: none;
+  transition: all 300ms ease;
+  letter-spacing: 5px;
+}
+
+.navbar-menu a:hover{
+  color: #fff;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+}
+
+.nav-connect button{
+  font-weight: 700;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 18px 28px;
+  font-size: 18px;
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  transition: 0.3s ease-in-out;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.nav-connect button span{
+  z-index: 1;
+  position: relative;
+}
+
+.nav-connect button::before{
+  content: "";
+  width: 0%;
+  height: 100%;
+  position: absolute;
+  background-color: #fff;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  transition: 0.3s ease-in-out;
+}
+
+.nav-connect button:hover{
+  color: #000;
+}
+
+.nav-connect button:hover::before{
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+/* hamburger Css */
+
+#hamburger-nav{
+  display: none;
+}
+
+.hamburger-menu{
+  position: relative;
+  display: inline-block;
+}
+
+.hamburger-icon{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  height: 25px;
+  width: 30px;
+  cursor: pointer;
+}
+
+/* style for three bars */
+
+.hamburger-icon span{
+  width: 30px;
+  height: 2px;
+  background-color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger-icon.open span:nth-child(1){
+  transform: rotate(45deg) translateY(10px);
+}
+
+.hamburger-icon.open span:nth-child(2){
+  opacity: 0;
+}
+
+.hamburger-icon.open span:nth-child(3){
+  transform: rotate(-45deg) translateY(-10px);
+}
+
+.menu-links{
+  position: absolute;
+  top: 50px;
+  right: 0;
+  width: 250px;
+  max-height: 0;
+  background-color: #000;
+  overflow: hidden;
+  transition: all 0.3 ease-in-out;
+}
+
+.menu-links a {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3 ease-in-out;
+}
+
+.menu-links li {
+  list-style: none;
+}
+
+.menu-links.open {
+  max-height: 400px;
+  box-shadow: 0px 0px 10px #fff;
+  padding: 10px;
+}
+
+.hamburger-btn button{
+  padding: 10px;
+  font-weight: 700;
+  color: #000;
+  background-color: #fff;
+  font-size: 15px;
+  letter-spacing: normal;
+}
+
+/* Home Css */
+
+#home{
+  position: relative;
+}
+
+.home{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.profile-img{
+  border-radius: 50%;
+  border: solid #fff;
+  height: 250px;
+  padding: 10px;
+  margin-top: 150px;
+}
+
+.home h1{
+  font-size: 50px;
+  text-align: center;
+  width: 70%;
+  font-weight: 600;
+  letter-spacing: 5px;
+}
+
+.home p{
+  width: 50%;
+  text-align: center;
+  font-size: 22px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.home h1 span{
+  opacity: 0.5;
+}
+
+/* Home & Project Button Css */
+
+.custom-btn, .project-btn{
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.custom-btn button{
+  padding: 18px 28px;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+.project-btn button{
+  padding: 15px 25px;
+  font-size: 1rem;
+  letter-spacing: 1.5px;
+}
+
+.custom-btn button.first-btn, .project-btn button.second-btn{
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.custom-btn button.second-btn, .project-btn button.first-btn{
+  background-color: #fff;
+  color: #000;
+  border: none;
+}
+
+.custom-btn button.first-btn:hover, 
+.custom-btn button.second-btn:hover,
+.project-btn button.first-btn:hover,
+.project-btn button.second-btn:hover {
+  transform: scale(1.05); 
+}
+
+.custom-btn button.first-btn:hover,
+.project-btn button.second-btn:hover{
+  box-shadow: 0px 2px 5px #fff;
+}
+
+/* Social Css */
+
+.social{
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  gap: 1rem;
+  z-index: 1;
+}
+
+.social-icon{
+  height: 3rem;
+  cursor: pointer;
+  transition: transform 300ms ease;
+  border-radius: 50%;
+}
+
+.social-icon:hover{
+  transform: scale(1.1);
+}
+
+/* About Css */
+
+#about{
+  margin-top: 50px;
+  position: relative;
+}
+
+.about{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+p{
+  font-weight: 600;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.title{
+  font-size: 3rem;
+  text-align: center;
+}
+
+.about-para{
+  text-align: center;
+  margin-top: 2rem;
+  letter-spacing: 5px;
+  line-height: 3rem;
+  font-size: 1.5rem;
+  color: #c2c0c0;
+  width: 90%;
+}
+
+.highlight{
+  color: #fff;
+  font-weight: 600;
+}
+
+.know-more-icon{
+  cursor: pointer;
+}
+
+.arrow-icon {
+  padding: 10px;
+  width: 60px;
+  height: 50px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.arrow-icon:hover{
+  transform: scale(1.2);
+}
+
+/* Skills Css */
+
+#skills{
+  margin-top: 50px;
+  position: relative;
+}
+
+.skills {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.skills-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5rem;
+  margin: 2rem;
+  padding: 5px 30px;
+  width: 70%;
+}
+
+.skill-icon{
+  padding: 20px;
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  transition: transform 300ms ease;
+}
+
+.skill-icon:hover{
+  transform: scale(1.1);
+}
+
+
+/* Projects Css */
+
+#projects{
+  margin-top: 50px;
+  position: relative;
+}
+
+.projects{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem;
+  padding: 5px 30px;
+  width: 100%;
+}
+
+.project-card {
+  width: 400px;
+  height: 650px;
+  gap: 5rem;
+  padding: 8px;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  background-color: transparent;
+  border: none;
+  box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.project-image {
+  width: 100%;
+  height: 300px;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  object-fit: cover;
+}
+
+.project-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.project-card p {
+  font-size: 1rem;
+  letter-spacing: 1px;
+  color: #c2c0c0;
+  margin-bottom: 1.5rem;
+}
+
+.project-card:hover{
+  transform: scale(1.05);
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 1);
+}
+
+.show-more-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+ }
+ 
+ .show-more-btn button.about-btn{
+   padding: 10px 30px;
+   font-size: 15px;
+   letter-spacing: 1px;
+   border: 1px solid #fff;
+   color: #fff;
+   background-color: transparent;
+ }
+ 
+ .show-more-btn button.about-btn:hover{
+   transform: scale(1.05);
+ }
+
+ .first-btn.blur-btn{
+  filter: blur(3px);
+  opacity: 0.5;
+ }
+
+ .first-btn.blur-btn:hover{
+  cursor: not-allowed;
+ }
+
+/* Footer Css */
+
+.footer {
+  background-color: #1d1d1d;
+  color: #fff;
+  margin-top: 50px;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.footer-left {
+  max-width: 500px;
+}
+
+.footer-left h2 {
+  font-weight: 900;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  margin-bottom: 30px;
+}
+
+.footer-left p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  line-height: 1.5rem;
+  letter-spacing: 1px;
+  text-align: start;
+}
+
+.footer-social{
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-right {
+  display: flex;
+  gap: 2rem;
+}
+
+.footer-card {
+  cursor: pointer;
+  background-color: #000;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 300px;
+  box-shadow: 10px 10px 5px #535353;
+  transition: all 0.3s ease-in-out;
+}
+
+.footer-card .icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.footer-card p {
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 10px;
+}
+
+.footer-card:hover{
+  transform: scale(1.05);
+}
+
+/* road-lines Css */
+
+.road-lines {
+  padding: 20px;
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.line {
+  width: 7px;
+  height: 50px; 
+  background-color: #535353; 
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 300ms;
+}
+
+.line.active {
+  background-color: #fff; 
+}
+
+

@@ -1,0 +1,321 @@
+@import url('https://fonts.google.com/specimen/Poppins?query=Poppins');
+
+*{
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  background-color: #000;
+  color: #fff;
+}
+
+
+@media screen and (max-width: 1200px) {
+  #desktop-nav{
+    display: none;
+  }
+  #hamburger-nav{
+    display: flex;
+  }
+}
+
+@media (max-width: 768px) {
+
+  p{
+    font-weight: 600;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .title{
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  /* Navbar */
+  nav {
+    height: 10vh;
+    padding: 0 1rem;
+    justify-content: space-between;
+  }
+
+  .logo{
+    height: 70px;
+  }
+
+  /* Section */
+  section {
+    margin: 0 2rem;
+    padding-top: 8vh;
+  }
+
+  /* Home Section */
+  .profile-img {
+    height: 150px;
+    margin-top: 100px;
+  }
+
+  .home h1 {
+    font-size: 2.5rem;
+    width: 100%;
+  }
+
+  .home p {
+    width: 90%;
+    font-size: 1.1rem;
+    letter-spacing: 1.5px;
+  }
+
+  /* About Section */
+  .about-para{
+    margin-top: 2rem;
+    letter-spacing: 3px;
+    line-height: 2.5rem;
+    font-size: 1.2rem;
+  }
+
+  /* Skills Section */
+  .skills-list {
+    gap: 2rem;
+    padding: 10px;
+    width: 90%;
+  }
+  
+  .skill-icon{
+    padding: 20px;
+    height: 100px;
+    width: 100px;
+  }
+
+  .skills-list h3{
+    font-size: 1rem;
+  }
+
+  /* Projects Section */
+  .projects-list {
+    width: 100%;
+    gap: 1.5rem;
+    padding: 15px;
+  }
+
+  .project-card {
+    width: 70%;
+    height: auto;
+  }
+
+  .project-image {
+    height: 200px;
+  }
+
+  .project-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .project-card p {
+    font-size: 0.9rem;
+    letter-spacing: 1.2px;
+    margin-bottom: 1rem;
+  }
+
+  /* Footer */
+
+  .footer-content {
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .footer-left h2{
+    font-size: 1.5rem;
+    text-underline-offset: 0.5rem;
+    margin-bottom: 20px;
+  }
+
+  .footer-left p {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .footer-social{
+    justify-content: center;
+  }
+
+  .footer-card p {
+    font-size: 1.1rem;
+  }
+
+  /* Buttons */
+  .custom-btn button,
+  .project-btn button {
+    padding: 12px 22px;
+    font-size: 14px;
+  }
+
+  /* road-lines */
+  .road-lines{
+    padding: 10px;
+    right: 0px;
+    gap: 10px;
+  }
+
+  .line{
+    width: 5px;
+    height: 35px;
+  }
+}
+
+
+@media (max-width: 480px) {
+
+  p{
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  
+  .title{
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  /* Navbar */
+  nav {
+    height: 8vh;
+    padding: 0 0.5rem;
+    justify-content: space-between;
+  }
+  .logo{
+    height: 60px;
+  }
+
+  /* Section */
+  section {
+    margin: 0 1rem;
+    padding-top: 10vh;
+  }
+
+  /* Home Section */
+  .profile-img {
+    height: 120px;
+    margin-top: 80px;
+  }
+
+  .home h1 {
+    font-size: 2rem;
+    width: 100%;
+  }
+
+  .home p {
+    width: 90%;
+    font-size: 1rem;
+    letter-spacing: 1px;
+  }
+
+  /* About Section */
+  .about-para{
+    margin-top: 2rem;
+    letter-spacing: 3px;
+    line-height: 2rem;
+    font-size: 1rem;
+  }
+
+  /* Skills Section */
+  .skills-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 10px;
+    width: 100%;
+  }
+  
+  .skill-icon{
+    padding: 20px;
+    height: 80px;
+    width: 80px;
+  }
+
+  .skills-list h3{
+    font-size: 0.9rem;
+  }
+
+  /* Projects Section */
+  .projects-list {
+    width: 100%;
+    gap: 1rem;
+    padding: 10px;
+  }
+
+  .project-card {
+    width: 100%;
+    height: auto;
+  }
+
+  .project-image {
+    height: 180px;
+  }
+
+  .project-card h3 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .project-card p {
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    color: #c2c0c0;
+    margin-bottom: 1rem;
+  }
+
+  /* Footer */
+
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  .footer-left h2 {
+    font-size: 1rem;
+    text-underline-offset: 0.5rem;
+    margin-bottom: 20px;
+  }
+
+  .footer-left p {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+
+  .footer-social{
+    justify-content: center;
+  }
+
+  .footer-card p {
+    font-size: 1rem;
+  }
+
+  /* Buttons */
+  .custom-btn button,
+  .project-btn button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  /* road-lines */
+  .road-lines{
+    padding: 10px;
+    right: 0px;
+    gap: 10px;
+  }
+
+  .line{
+    width: 5px;
+    height: 30px;
+  }
+}
+
