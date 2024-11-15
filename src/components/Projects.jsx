@@ -16,10 +16,10 @@ function Projects({showText,toggleText}){
                             <p>{project.description}</p>
                             
                             <div className="project-btn">
-                                <button className={`first-btn ${project.id == '1' || 
-                                project.id == '7' ? "blur-btn":"" }`} 
+                                <button className={`first-btn ${project.id == '7' || 
+                                project.id == '8' ? "blur-btn":"" }`} 
                                 onClick={() => window.open(project.liveDemo , '_blank')}
-                                disabled ={project.id == '1' || project.id == '7'}
+                                disabled ={project.id == '7' || project.id == '8'}
                                 > 
                                 <span>Live Demo</span>
                                 </button>

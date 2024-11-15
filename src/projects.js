@@ -1,20 +1,21 @@
 
-import sms from "../src/assets/images/p1.png";
+import keep from "../src/assets/images/p1.png";
 import quiz from "../src/assets/images/p2.png";
 import invoice from "../src/assets/images/p3.png";
 import weather from "../src/assets/images/p4.png";
 import fashion from "../src/assets/images/p5.png";
 import travel from "../src/assets/images/p6.png";
 import student from "../src/assets/images/p7.png";
+import sms from "../src/assets/images/p8.png";
 
 const projectList = [
      {
         id:1,
-        title: "Student Management System",
-        description: "This App is built in MVC architecture, ensures data security and management. It's built using Java and Jdbc for server-pages, to perform full CRUD operations. It handles and stores student data in the database.",
-        image: sms,
-        liveDemo: "",
-        github: "https://github.com/mervin-prog/SMS"
+        title: "Keeper App",
+        description: "This note-taking app is built to perform CRUD operations for all notes. It handles authentication in both frontend and backend includes sign up, login, forgot password for users providing enhanced security.",
+        image: keep,
+        liveDemo: "https://keeper-app-01i2.onrender.com/",
+        github: "https://github.com/mervin-prog/keeper_app"
     },
     {
         id:2,
@@ -63,6 +64,14 @@ const projectList = [
         image: student,
         liveDemo: "",
         github: "https://github.com/mervin-prog/Student_CRUD_App"
+    },
+    {
+        id:8,
+        title: "Student Management System",
+        description: "This App is built in MVC architecture, ensures data security and management. It's built using Java and Jdbc for server-pages, to perform full CRUD operations. It handles and stores student data in the database.",
+        image: sms,
+        liveDemo: "",
+        github: "https://github.com/mervin-prog/SMS"
     }
 ];
 
