@@ -1,5 +1,5 @@
 import React from "react";
-import profile_img from '../assets/images/profile1.png';
+import profile_img from '../assets/images/profile3.png';
 import resume from '../assets/Mervin_Profile.pdf';
 import LinkedIn from '../assets/images/linkedin.png';
 import Github from '../assets/images/github.jpg';
